@@ -4,4 +4,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name">Name</string>
     <string name="repeat_password">Repeat password</string>
+    <string name="emptyPassword">Senha não pode ser vazio!!</string>
+    <string name="emptyEmail">Campo Email não pode ser vazio!</string>
+    <string name="invalidEmail">Email Inválido!</string>
+    <string name="imagem_do_prato">Imagem do prato</string>
 </resources>

@@ -12,6 +12,7 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.textfield.TextInputLayout
+
             android:id="@+id/til_email_login"
             android:layout_width="0dp"
             android:layout_height="68dp"
@@ -27,11 +28,12 @@
                 android:id="@+id/edt_email_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
                 android:background="@color/white" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txt_password_Login"
+            android:id="@+id/til_password_Login"
             android:layout_width="0dp"
             android:layout_height="68dp"
             android:layout_marginTop="12dp"
@@ -41,6 +43,8 @@
             app:layout_constraintTop_toBottomOf="@id/til_email_login">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:inputType="numberPassword"
+                android:id="@+id/edt_password_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/white" />
@@ -56,9 +60,9 @@
             android:layout_marginTop="52dp"
             android:backgroundTint="#FF5252"
             android:text="log in"
-            app:layout_constraintEnd_toEndOf="@id/txt_password_Login"
-            app:layout_constraintStart_toStartOf="@id/txt_password_Login"
-            app:layout_constraintTop_toBottomOf="@id/txt_password_Login" />
+            app:layout_constraintEnd_toEndOf="@id/til_password_Login"
+            app:layout_constraintStart_toStartOf="@id/til_password_Login"
+            app:layout_constraintTop_toBottomOf="@id/til_password_Login" />
 
         <View
             android:id="@+id/v_view1"
