@@ -28,12 +28,12 @@ class DetalhesActivity : AppCompatActivity() {
             loadFragment(PratosFragment())
             backFragment()
 
-            detalhesViewModel.pos.observe(this, Observer {
+            detalhesViewModel.pos.observe(this, {
                 loadFragment(FragmentDetalhePrato())
             })
 
 
-            detalhesViewModel.backD.observe(this, Observer {
+            detalhesViewModel.backD.observe(this, {
                 loadFragment(PratosFragment())
             })
 
@@ -46,7 +46,7 @@ class DetalhesActivity : AppCompatActivity() {
 
 
     private fun backFragment() {
-        detalhesViewModel.back.observe(this, Observer {
+        detalhesViewModel.back.observe(this, {
             finish()
         })
     }

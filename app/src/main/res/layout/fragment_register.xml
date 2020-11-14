@@ -100,7 +100,7 @@
             app:layout_constraintTop_toBottomOf="@id/til_rep_password_register"
             android:layout_marginTop="120dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:text="Register"
+            android:text="@string/register"
 
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
