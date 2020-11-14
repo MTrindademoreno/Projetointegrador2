@@ -4,4 +4,17 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="name">Name</string>
     <string name="repeat_password">Repeat password</string>
+
+
+    <string name="invalidEmail">Email Inválido!</string>
+    <string name="imagem_do_prato">Imagem do prato</string>
+    <string name="register">Register</string>
+    <string name="or">OR</string>
+    <string name="log_in">log in</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="campo_obrigatorio">Campo obrigatório!</string>
+    <string name="pratos_principais">Pratos Principais</string>
+
+
 </resources>
