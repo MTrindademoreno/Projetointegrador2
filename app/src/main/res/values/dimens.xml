@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_endereco">14sp</dimen>
+    <dimen name="size_horario">11sp</dimen>
+    <dimen name="size_nome">26sp</dimen>
+    <dimen name="size_desc">20sp</dimen>
+</resources>

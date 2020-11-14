@@ -1,4 +1,4 @@
-package dominando.android.goodfood
+package dominando.android.goodfood.view.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,9 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import dominando.android.goodfood.view.acticity.MainRestaurants
+import dominando.android.goodfood.R
+import dominando.android.goodfood.viewModel.MainViewModel
 
 
 class FragmentLogin : Fragment() {
@@ -47,10 +50,10 @@ class FragmentLogin : Fragment() {
                 val mailvalida = mEmail.editableText.toString()
                 val mPassword = mEditPassword.editableText.toString()
                 if (mPassword.isEmpty()) {
-                    mEditPassword.setError(getString(R.string.emptyPassword))
+                    mEditPassword.error =  getString(R.string.campo_obrigatorio)
                 }
                 if (mailvalida.isEmpty()) {
-                    mEmail.setError(getString(R.string.emptyEmail))
+                    mEmail.error =  getString(R.string.campo_obrigatorio)
                 } else {
                     if (mainViewModel.validaEmail(mailvalida)) {
                         val intent = Intent(requireContext(), MainRestaurants::class.java)
@@ -58,7 +61,7 @@ class FragmentLogin : Fragment() {
                         activity.finish()
 
                     }else{
-                        mEmail.setError(getString(R.string.invalidEmail))
+                        mEmail.error = getString(R.string.invalidEmail)
                     }
                 }
 

@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentLogin">
+    tools:context=".view.fragment.FragmentLogin">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputLayout
 
@@ -19,7 +19,7 @@
             android:layout_marginStart="23dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="23dp"
-            android:hint="Email"
+            android:hint="@string/email"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -37,7 +37,7 @@
             android:layout_width="0dp"
             android:layout_height="68dp"
             android:layout_marginTop="12dp"
-            android:hint="Password"
+            android:hint="@string/password"
             app:layout_constraintEnd_toEndOf="@id/til_email_login"
             app:layout_constraintStart_toStartOf="@id/til_email_login"
             app:layout_constraintTop_toBottomOf="@id/til_email_login">
@@ -59,7 +59,7 @@
             android:layout_height="68dp"
             android:layout_marginTop="52dp"
             android:backgroundTint="#FF5252"
-            android:text="log in"
+            android:text="@string/log_in"
             app:layout_constraintEnd_toEndOf="@id/til_password_Login"
             app:layout_constraintStart_toStartOf="@id/til_password_Login"
             app:layout_constraintTop_toBottomOf="@id/til_password_Login" />
@@ -70,13 +70,10 @@
             android:layout_height="1dp"
             android:layout_marginEnd="20dp"
             android:background="@color/black"
-
-
             app:layout_constraintBottom_toBottomOf="@id/txt_or"
             app:layout_constraintEnd_toEndOf="@+id/v_view2"
             app:layout_constraintEnd_toStartOf="@id/txt_or"
             app:layout_constraintStart_toStartOf="@id/btn_login"
-
             app:layout_constraintTop_toTopOf="@id/txt_or" />
 
         <TextView
@@ -84,14 +81,13 @@
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginStart="10dp"
-
             android:layout_marginTop="56dp"
             android:layout_marginEnd="10dp"
-            android:text="OR"
+            android:text="@string/or"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="18dp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_login"
@@ -115,8 +111,8 @@
             android:layout_height="70dp"
             android:layout_marginTop="100dp"
             android:layout_marginBottom="30dp"
-            android:backgroundTint="#8492A6"
-            android:text="Register"
+            android:backgroundTint="@color/cinza"
+            android:text="@string/register"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/btn_login"
             app:layout_constraintStart_toStartOf="@id/btn_login"
