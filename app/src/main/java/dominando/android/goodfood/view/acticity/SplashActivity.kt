@@ -18,8 +18,9 @@ class SplashActivity : AppCompatActivity() {
 
         val img =findViewById<ImageView>(R.id.img_splash)
         Picasso.get().load("https://i.pinimg.com/originals/64/19/4c/64194cdfcded215e58a815083a0e88a6.jpg").into(img)
-        Timer("SplashScreen", false).schedule(2000) {
+        Timer("Splash", false).schedule(2000) {
             startActivity(Intent(this@SplashActivity,MainActivity::class.java))
+            finish()
         }
 
 
